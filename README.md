@@ -52,5 +52,17 @@ Git歷史紀錄\
     顯示欲合併的遞交清單	git log --no-merges <current_branch_name>..<target_branch_name>\
     顯示引用內容	git log <target_branch_name> --not <current_branch_name>
 
+Git遠端\
+    複製遠端專案 	git clone <githubURL>\
+    複製遠端專案並重新命名專案	git clone <githubURL> <projName>\
+    顯示遠端倉庫	git remote\
+    顯示遠端倉庫並顯示對應URL	git remote -v\
+    增加遠端倉庫	git remote add <remoteName> <url>\
+    從遠端倉庫取得和擷取資料	git fetch <remoteName> <branchName>\
+    資料發送到遠端倉庫	git push <remoteName> <branchName>\
+    檢查遠端倉庫 	git remote show <remoteName>\
+    重新命名遠端倉庫	git remote rename <oldBranchName> <newBranchName>\
+    刪除遠端倉庫 	git remote rm <branchName>\
+
 
 
