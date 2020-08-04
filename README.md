@@ -1,7 +1,7 @@
 # GitInstruction
 Git指令
 
-Git設定
+Git設定\
     更新(Window)	git update-git-for-windows\
     安裝路徑(Window)	where git\
     設定參數	git config\
@@ -14,7 +14,7 @@ Git設定
     刪除設定值	git config --global --unset <key>\
     打包成ZIP檔(tar數據文件)	git archive --format=zip --output=<fileName>.tar HEAD\
 
-Git基礎
+Git基礎\
     初始化專案	git init\
     檢視目前檔案狀態	git status\
     簡潔顯示狀態資訊	git status -s\
