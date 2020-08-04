@@ -84,6 +84,8 @@ Git標籤 \
     刪除遠端標籤 	git push origin --delete tag \<tagName\> \
     顯示最近標籤 	git describe \<branchName\>
 
+Git分支機制
+
 
 
 
