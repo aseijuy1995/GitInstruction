@@ -12,7 +12,7 @@ Git設定\
     說明	git <verb> --help\
     HTTP憑證儲存	git config --global credential.helper cache\
     刪除設定值	git config --global --unset <key>\
-    打包成ZIP檔(tar數據文件)	git archive --format=zip --output=<fileName>.tar HEAD\
+    打包成ZIP檔(tar數據文件)	git archive --format=zip --output=<fileName>.tar HEAD
 
 Git基礎\
     初始化專案	git init\
@@ -26,7 +26,7 @@ Git基礎\
     遞交變更並顯示相關資訊(分支/SHA-1/增減統計資訊)	git commit -v -am <committed>\
     移除檔案	git rm -f <fileName>\
     從暫存區移出檔案	git rm --cached <fileName>\
-    移動檔案 	git mv <file_go> <file_to>\
+    移動檔案 	git mv <file_go> <file_to>
 
 Git歷史紀錄\
     檢視遞交歷史 	git log\
@@ -50,7 +50,7 @@ Git歷史紀錄\
     檢視遞交歷史並依增減相關方法的最後一次遞交	git log -S<funcName>\
     顯示指向此提交的所有引用(分支,標籤等) 	git log --decorate\
     顯示欲合併的遞交清單	git log --no-merges <current_branch_name>..<target_branch_name>\
-    顯示引用內容	git log <target_branch_name> --not <current_branch_name>\
+    顯示引用內容	git log <target_branch_name> --not <current_branch_name>
 
 
 
