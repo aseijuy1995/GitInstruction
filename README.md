@@ -64,16 +64,16 @@ Git遠端\
     重新命名遠端倉庫	git remote rename <oldBranchName> <newBranchName>\
     刪除遠端倉庫 	git remote rm <branchName>\
 
-Git標籤\
-    列舉標記	git tag\
-    註釋標籤	git tag -a \<tagName\> -m "<commend>"\
-    顯示標籤資訊	git show \<tagName\>\
-    輕量標籤	git tag \<tagName\>\
-    補加標籤	git tab -a \<tagName\> <SHA-1>\
-    共用標籤	git push origin \<tagName\> / git push origin --tags\
-    刪除本地標籤	git tag -d \<tagName\>\
-    刪除遠端標籤 	git push origin --delete tag \<tagName\>\
-    顯示最近標籤 	git describe \<branchName\>\ 
+Git標籤 \
+    列舉標記	git tag \
+    註釋標籤	git tag -a \<tagName\> -m "<commend>" \
+    顯示標籤資訊	git show \<tagName\> \
+    輕量標籤	git tag \<tagName\> \
+    補加標籤	git tab -a \<tagName\> <SHA-1> \
+    共用標籤	git push origin \<tagName\> / git push origin --tags \
+    刪除本地標籤	git tag -d \<tagName\> \
+    刪除遠端標籤 	git push origin --delete tag \<tagName\> \
+    顯示最近標籤 	git describe \<branchName\> \
 
 
 
