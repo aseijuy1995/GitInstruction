@@ -28,4 +28,29 @@ Git基礎\
     從暫存區移出檔案	git rm --cached <fileName>\
     移動檔案 	git mv <file_go> <file_to>\
 
+Git歷史紀錄\
+    檢視遞交歷史 	git log\
+    檢視遞交歷史並顯示遞交差異 	git log -p\
+    檢視遞交歷史並簡要統計資訊	git log --stat\
+    檢視遞交歷史並更改輸出格式	git log --pretty=<verb>  (oneline / shoort / full / fuller)\
+    檢視遞交歷史並自訂輸出格式	git log --pretty=format:"<formatDesc>"\
+    檢視遞交歷史並顯示ASCII基本圖表	git log --graph\
+    檢視遞交歷史並顯示更改檔案統計資訊	git log --shortstat\
+    檢視遞交歷史並顯示有被更改的檔案	git log --name-only\
+    檢視遞交歷史並顯示有被更改的檔案與更改過的統計資訊	git log --name-status\
+    檢視遞交歷史並簡短顯示SHA-1值	git log --abbrev-commit\
+    檢視遞交歷史並顯示相對日期	git log --relative-date\
+    檢視遞交歷史並只顯示最新n筆遞交	 git log -(n)\
+    檢視遞交歷史並指定日期之後的遞交 	git log --since --after\
+    檢視遞交歷史並指定日期之前的遞交	git log --until --before\
+    檢視遞交歷史並依名查詢相關遞交 	git log --author="<author>"\
+    檢視遞交歷史並依關鍵字查詢相關遞交	git log --grep="<grep>"\
+    檢視遞交歷史並依多條件查詢相關遞交	git log --author="<author>" --grep="<grep>" --all-match\
+    檢視遞交歷史並指定相符字串的遞交	git log --committer <committer>\
+    檢視遞交歷史並依增減相關方法的最後一次遞交	git log -S<funcName>\
+    顯示指向此提交的所有引用(分支,標籤等) 	git log --decorate\
+    顯示欲合併的遞交清單	git log --no-merges <current_branch_name>..<target_branch_name>\
+    顯示引用內容	git log <target_branch_name> --not <current_branch_name>\
+
+
 
