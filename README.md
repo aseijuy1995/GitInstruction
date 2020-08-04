@@ -8,11 +8,14 @@ Git設定\
     設定全域使用者名稱	git config --global user.name "\<userName\>" \
     設定全域使用者郵件	git config --global user.email "\<userEmail\>" \
     檢視設定	git config --list \
-    檢視設定值	git config <key> \
+    檢視設定值	git config \<key\> \
     說明	git \<verb\> --help \
     HTTP憑證儲存	git config --global credential.helper cache \
     刪除設定值	git config --global --unset \<key\> \
-    打包成ZIP檔(tar數據文件)	git archive --format=zip --output=\<fileName\>.tar HEAD
+    打包成ZIP檔(tar數據文件)	git archive --format=zip --output=\<fileName\>.tar HEAD \
+    Git別名/替換Git別名	git config --global alias.\<abbrev\> \<fullName\> \
+    刪除Git別名	git config --global --unset alias.\<abbrev\>
+
 
 Git基礎 \
     初始化專案	git init \
@@ -26,7 +29,11 @@ Git基礎 \
     遞交變更並顯示相關資訊(分支/SHA-1/增減統計資訊)	git commit -v -am \<committed\> \
     移除檔案	git rm -f \<fileName\> \
     從暫存區移出檔案	git rm --cached \<fileName\> \
-    移動檔案 	git mv \<file_go\> \<file_to\>
+    移動檔案 	git mv \<fileFrom\> \<fileTo\> \
+    取消操作並重新修改commit名	git commit -m "\<committed\>" --amend \
+    取消已暫存的檔案 	get reset head \<fileName\> \
+    取消已修改的檔案	git checkout -- \<fileName\>
+
 
 Git歷史紀錄\
     檢視遞交歷史 	git log \
@@ -63,13 +70,15 @@ Git遠端\
     檢查遠端倉庫 	git remote show \<remoteName\> \
     重新命名遠端倉庫	git remote rename \<oldBranchName\> \<newBranchName\> \
     刪除遠端倉庫 	git remote rm \<branchName\> \
+    資料發送到遠端覆蓋當前遠端 	git push -f \<currentBranchName\> \<remoteBranchName\>
+
 
 Git標籤 \
     列舉標記	git tag \
     註釋標籤	git tag -a \<tagName\> -m "\<commend\>" \
     顯示標籤資訊	git show \<tagName\> \
     輕量標籤	git tag \<tagName\> \
-    補加標籤	git tab -a \<tagName\> <SHA-1> \
+    補加標籤	git tab -a \<tagName\> \<SHA-1\> \
     共用標籤	git push origin \<tagName\> / git push origin --tags \
     刪除本地標籤	git tag -d \<tagName\> \
     刪除遠端標籤 	git push origin --delete tag \<tagName\> \
