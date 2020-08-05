@@ -1,7 +1,7 @@
 # GitInstruction
 Git指令
 
-Git設定 \\
+Git設定 \
     更新(Window)	git update-git-for-windows \
     安裝路徑(Window)	where git \
     檢視指令	git config \
@@ -16,7 +16,7 @@ Git設定 \\
     Git別名/替換Git別名	git config --global alias.\<abbrev\> \<full_name\> \
     刪除Git別名	git config --global --unset alias.\<abbrev\>
 
-Git基礎 \\
+Git基礎 \
     初始化專案	git init \
     檢視目前檔案狀態	git status \
     簡潔顯示狀態資訊	git status -s \
@@ -36,7 +36,7 @@ Git基礎 \\
     取消已暫存的檔案 	get reset head \<file_name\> \
     取消已修改的檔案	git checkout -- \<file_name\> \
 
-Git歷史紀錄 \\
+Git歷史紀錄 \
     檢視遞交歷史 	git log \
     檢視遞交歷史並顯示遞交差異 	git log -p \
     檢視遞交歷史並簡要統計資訊	git log --stat \
@@ -61,7 +61,7 @@ Git歷史紀錄 \\
     顯示引用內容	git log \<target_branch\> --not \<current_branch\>
     檢視各分支所指向的物件	git log --oneline --decorate
 
-Git遠端 \\
+Git遠端 \
     複製遠端專案 	git clone \<url\> \
     複製遠端專案並重新命名專案	git clone \<url\> \<proj_name\> \
     顯示遠端倉庫	git remote \
@@ -74,7 +74,7 @@ Git遠端 \\
     刪除遠端倉庫 	git remote rm \<branch\> \
     資料發送到遠端覆蓋當前遠端 	git push -f \<current_branch\> \<remote_branch\> \
 
-Git標籤 \\
+Git標籤 \
     列舉標記	git tag \
     註釋標籤	git tag -a \<tag\> -m "\<commit\>" \
     顯示標籤資訊	git show \<tag\> \
@@ -85,7 +85,7 @@ Git標籤 \\
     刪除遠端標籤 	git push origin --delete tag \<tag\> \
     顯示最近標籤 	git describe \<branch\>
 
-Git分支機制 \\
+Git分支機制 \
     建立分支	git branch \<branch\> \
     刪除分支 	git branch -d \<branch\> \
     切換分支 	git checkout \<branch\> \
