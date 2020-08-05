@@ -34,7 +34,7 @@ Git基礎 \
     從暫存區移出檔案	git rm --cached \<file_name\> \
     移動檔案 	git mv \<file_from\> \<file_to\> \
     取消已暫存的檔案 	get reset head \<file_name\> \
-    取消已修改的檔案	git checkout -- \<file_name\> \
+    取消已修改的檔案	git checkout -- \<file_name\>
 
 Git歷史紀錄 \
     檢視遞交歷史 	git log \
@@ -72,7 +72,7 @@ Git遠端 \
     檢查遠端倉庫 	git remote show \<remote_name\> \
     重新命名遠端倉庫	git remote rename \<old_branch\> \<new_branch\> \
     刪除遠端倉庫 	git remote rm \<branch\> \
-    資料發送到遠端覆蓋當前遠端 	git push -f \<current_branch\> \<remote_branch\> \
+    資料發送到遠端覆蓋當前遠端 	git push -f \<current_branch\> \<remote_branch\>
 
 Git標籤 \
     列舉標記	git tag \
@@ -96,7 +96,18 @@ Git分支機制 \
     建立追蹤分支	git checkout --track \<remote\>/\<remote_branch\> \
     更改遠端追蹤分支	git branch -u \<remote\>/\<remote_branch\> \
     檢視設定的追蹤分支	git branch -vv \
-    刪除遠端分支	git push \<remote\> --delete \<branch\> \
+    刪除遠端分支	git push \<remote\> --delete \<branch\>
+
+Git合併 \
+    合併分支	git merge \<branch_name\> \
+    合併遠端分支	git merge @{u} \
+    接受以合併分支其壓縮成一個變更	git merge --squash \<target_branch\>
+
+Git變基 \
+    基本變基合併 	git rebase \<target_branch\> \
+    衍生變基合併	git rebase --onto \<target_branch\> \<center_branch\> \<current_branch\> \
+    揀選需要的紀錄作為合併主分支中(類似rebase) 	git cherry-pick \<SHA-1\>
+
 
 
 
