@@ -4,7 +4,7 @@ Git指令
 Git設定\
     更新(Window)	git update-git-for-windows \
     安裝路徑(Window)	where git \
-    設定參數	git config \
+    設定指令	git config \
     設定全域使用者名稱	git config --global user.name "\<userName\>" \
     設定全域使用者郵件	git config --global user.email "\<userEmail\>" \
     檢視設定	git config --list \
@@ -75,7 +75,7 @@ Git遠端\
 
 Git標籤 \
     列舉標記	git tag \
-    註釋標籤	git tag -a \<tagName\> -m "\<commend\>" \
+    註釋標籤	git tag -a \<tagName\> -m "\<committed\>" \
     顯示標籤資訊	git show \<tagName\> \
     輕量標籤	git tag \<tagName\> \
     補加標籤	git tab -a \<tagName\> \<SHA-1\> \
